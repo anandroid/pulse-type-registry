@@ -5,6 +5,7 @@ export const EventSchema = z.object({
     date: z.string().nullable(), // Assumes ISO 8601 string
     location: z.string().nullable(),
     description: z.string().nullable(),
+    image_url: z.string().nullable(),
     source: z.string().nullable(),
     source_url: z.string().nullable(),
 });

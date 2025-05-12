@@ -8,7 +8,7 @@ export const DealSchema = z.object({
     description: z.string().nullable(),
     source: z.string().nullable(),
     source_url: z.string().nullable(),
-    image: z.string().nullable(),
+    image_url: z.string().nullable(),
     timestamp: z.string().nullable() // Assumes ISO 8601 string
 });
 
