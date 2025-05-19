@@ -4,10 +4,10 @@ import {z} from 'zod';
 export const NewsArticleSchema = z.object({
     image_url: z.string(),
     title: z.string(),
-    short_description: z.string(),
+    description: z.string(),
     source: z.string(),
     source_url: z.string(),
-    timestamp: z.string()
+    date: z.string()
 });
 
 // Inferred TypeScript type

@@ -1,7 +1,7 @@
 import {z} from 'zod';
 
 export const EventSchema = z.object({
-    name: z.string(),
+    title: z.string(),
     date: z.string().nullable(), // Assumes ISO 8601 string
     location: z.string().nullable(),
     description: z.string().nullable(),
