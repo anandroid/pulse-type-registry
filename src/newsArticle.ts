@@ -2,6 +2,7 @@ import {z} from 'zod';
 
 // Zod schema for news articles
 export const NewsArticleSchema = z.object({
+    id: z.string(), // Assuming ID is a UUID
     image_url: z.string(),
     title: z.string(),
     description: z.string(),
