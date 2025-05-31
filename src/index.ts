@@ -2,3 +2,8 @@ export * from './newsArticle';
 export * from './deal';
 export * from './reel';
 export * from './event';
+export * from './metadata';
+export * from './newsArticleWithMeta';
+export * from './dealWithMeta';
+export * from './reelWithMeta';
+export * from './eventWithMeta';
