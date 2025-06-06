@@ -7,3 +7,5 @@ export * from './newsArticleWithMeta';
 export * from './dealWithMeta';
 export * from './reelWithMeta';
 export * from './eventWithMeta';
+export * from './flyer';
+export * from './flyerWithMeta';
