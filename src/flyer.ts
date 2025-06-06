@@ -21,13 +21,8 @@ export const FlyerItemSchema = z.union([
 export const FlyerSchema = z.object({
   id: z.string(),
   image_url: z.string(),
-  items: z.array(FlyerItemSchema).min(1),
-  // Optional metadata about the flyer itself
-  title: z.string().nullish(),
-  description: z.string().nullish(),
-  source: z.string().nullish(),
-  source_url: z.string().nullish(),
-  created_at: z.string().nullish() // ISO 8601 timestamp
+  thumbnail_url: z.string().nullish(),
+  items: z.array(FlyerItemSchema).min(1)
 });
 
 export type Flyer = z.infer<typeof FlyerSchema>;
