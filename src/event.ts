@@ -9,6 +9,7 @@ export const EventSchema = z.object({
     image_url: z.string().nullable(),
     source: z.string().nullable(),
     source_url: z.string().nullable(),
+    emoji: z.string().nullable()
 });
 
 export type Event = z.infer<typeof EventSchema>;

@@ -10,7 +10,8 @@ export const DealSchema = z.object({
     source: z.string().nullable(),
     source_url: z.string().nullable(),
     image_url: z.string().nullable(),
-    timestamp: z.string().nullable() // Assumes ISO 8601 string
+    timestamp: z.string().nullable(), // Assumes ISO 8601 string
+    emoji: z.string().nullable()
 });
 
 export type Deal = z.infer<typeof DealSchema>;
