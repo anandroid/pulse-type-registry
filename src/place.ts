@@ -14,7 +14,8 @@ export const PlaceSchema = z.object({
     category: z.string().nullable(),
     image_url: z.string().nullable(),
     source: z.string().nullable(),
-    source_url: z.string().nullable()
+    source_url: z.string().nullable(),
+    emoji: z.string().nullable()
 });
 
 export type Place = z.infer<typeof PlaceSchema>;

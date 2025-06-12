@@ -8,7 +8,8 @@ export const NewsArticleSchema = z.object({
     description: z.string(),
     source: z.string(),
     source_url: z.string(),
-    date: z.string()
+    date: z.string(),
+    emoji: z.string().nullable()
 });
 
 // Inferred TypeScript type
