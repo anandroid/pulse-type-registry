@@ -17,17 +17,6 @@ export const PlaceSchema = z.object({
     source_url: z.string().nullable(),
     emoji: z.string().nullable(),
     
-    // Google Places specific fields
-    google_place_id: z.string().nullable(),
-    rating: z.number().nullable(),
-    user_ratings_total: z.number().nullable(),
-    price_level: z.number().nullable(),
-    types: z.array(z.string()).nullable(),
-    location: z.object({
-        lat: z.number(),
-        lng: z.number()
-    }).nullable(),
-    
     // Additional metadata
     area: z.string().nullable(),
     region: z.string().nullable(),
