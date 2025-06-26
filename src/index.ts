@@ -13,3 +13,5 @@ export * from './placeWithMeta';
 export * from './tweetWithMeta';
 export * from './flyer';
 export * from './flyerWithMeta';
+export * from './area';
+export * from './contentWithArea';
